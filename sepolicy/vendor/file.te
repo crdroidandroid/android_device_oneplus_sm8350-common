@@ -21,3 +21,5 @@ type sysfs_project_info, fs_type, sysfs_type;
 type sysfs_tof_control, fs_type, sysfs_type;
 type sysfs_tpd, fs_type, sysfs_type;
 type sysfs_tri_state_key, sysfs_type, fs_type;
+
+type lineage_data_file, file_type, data_file_type, core_data_file_type;
