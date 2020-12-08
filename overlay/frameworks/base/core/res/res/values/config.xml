@@ -239,21 +239,25 @@
     <!-- Operating volatage for bluetooth controller. 0 by default-->
     <integer translatable="false" name="config_bluetooth_operating_voltage_mv">3700</integer>
 
-    <!-- Vibrator pattern for feedback about a long screen/key press -->
+    <!-- Vibrator pattern for feedback about a long screen/key press. -->
     <integer-array name="config_longPressVibePattern">
         <item>0</item>
-        <item>10</item>
+        <item>1</item>
+        <item>20</item>
+        <item>21</item>
     </integer-array>
 
-    <!-- Vibrator pattern for feedback about touching a virtual key -->
+    <!-- Vibrator pattern for feedback about touching a virtual key. -->
     <integer-array name="config_virtualKeyVibePattern">
         <item>0</item>
         <item>10</item>
+        <item>20</item>
+        <item>30</item>
     </integer-array>
 
-    <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
+    <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap. -->
     <integer-array name="config_keyboardTapVibePattern">
-        <item>10</item>
+        <item>40</item>
     </integer-array>
 
     <!-- Default list of files pinned by the Pinner Service -->
