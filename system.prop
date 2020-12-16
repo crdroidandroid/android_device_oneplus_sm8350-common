@@ -46,6 +46,9 @@ ro.vendor.qti.core_ctl_min_cpu=2
 # Radio
 ro.telephony.default_network=33,33
 
+# Shutdown
+ro.build.shutdown_timeout=2
+
 # Touchscreen
 persist.vendor.qti.inputopts.enable=true
 persist.vendor.qti.inputopts.movetouchslop=0.6
