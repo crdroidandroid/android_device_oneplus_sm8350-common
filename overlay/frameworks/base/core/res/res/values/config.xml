@@ -299,4 +299,7 @@
         <item>258</item>
         <item>259</item>
     </integer-array>
+
+    <!-- Whether device has warp charging support -->
+    <bool name="config_hasWarpCharger">true</bool>
 </resources>
