@@ -18,4 +18,6 @@
           android:sharedUserId="android.uid.system"
           package="org.lineageos.settings.device">
     <uses-permission android:name="android.permission.VIBRATE" />
+
+    <protected-broadcast android:name=">org.lineageos.device.UPDATE_SLIDER_POSITION" />
 </manifest>

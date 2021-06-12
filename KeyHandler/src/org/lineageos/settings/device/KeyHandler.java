@@ -17,7 +17,9 @@
 package org.lineageos.settings.device;
 
 import android.content.Context;
+import android.content.Intent;
 import android.media.AudioManager;
+import android.os.UserHandle;
 import android.os.VibrationEffect;
 import android.os.Vibrator;
 import android.view.KeyEvent;
@@ -28,15 +30,25 @@ public class KeyHandler implements DeviceKeyHandler {
     private static final String TAG = KeyHandler.class.getSimpleName();
 
     // Slider key codes
-    private static final int MODE_NORMAL = 601;
-    private static final int MODE_VIBRATION = 602;
-    private static final int MODE_SILENCE = 603;
+    private static final int POSITION_BOTTOM = 601;
+    private static final int POSITION_MIDDLE = 602;
+    private static final int POSITION_TOP = 603;
+
+    // TriStateUI Modes
+    public static final int MODE_VIBRATE = 604;
+    public static final int MODE_RING = 605;
+    public static final int MODE_SILENT = 620;
 
     // Vibration effects
     private static final VibrationEffect MODE_NORMAL_EFFECT =
             VibrationEffect.get(VibrationEffect.EFFECT_HEAVY_CLICK);
     private static final VibrationEffect MODE_VIBRATION_EFFECT =
             VibrationEffect.get(VibrationEffect.EFFECT_DOUBLE_CLICK);
+
+    public static final String ACTION_UPDATE_SLIDER_POSITION
+            = "org.lineageos.device.UPDATE_SLIDER_POSITION";
+    public static final String EXTRA_SLIDER_POSITION = "position";
+    public static final String EXTRA_SLIDER_POSITION_VALUE = "position_value";
 
     private final Context mContext;
     private final AudioManager mAudioManager;
@@ -56,21 +68,32 @@ public class KeyHandler implements DeviceKeyHandler {
 
         int scanCode = event.getScanCode();
 
+        int position = 0;
+        int positionValue = 0;
+
         switch (scanCode) {
-            case MODE_NORMAL:
+            case POSITION_BOTTOM:
                 mAudioManager.setRingerModeInternal(AudioManager.RINGER_MODE_NORMAL);
+                position = 2;
+                positionValue = MODE_RING;
                 doHapticFeedback(MODE_NORMAL_EFFECT);
                 break;
-            case MODE_VIBRATION:
+            case POSITION_MIDDLE:
                 mAudioManager.setRingerModeInternal(AudioManager.RINGER_MODE_VIBRATE);
+                position = 1;
+                positionValue = MODE_VIBRATE;
                 doHapticFeedback(MODE_VIBRATION_EFFECT);
                 break;
-            case MODE_SILENCE:
+            case POSITION_TOP:
                 mAudioManager.setRingerModeInternal(AudioManager.RINGER_MODE_SILENT);
+                position = 0;
+                positionValue = MODE_SILENT;
                 break;
             default:
                 return event;
         }
+
+        sendUpdateBroadcast(position, positionValue);
 
         return null;
     }
@@ -79,5 +102,13 @@ public class KeyHandler implements DeviceKeyHandler {
         if (mVibrator != null && mVibrator.hasVibrator()) {
             mVibrator.vibrate(effect);
         }
+    }
+
+    private void sendUpdateBroadcast(int position, int position_value) {
+        Intent intent = new Intent(ACTION_UPDATE_SLIDER_POSITION);
+        intent.putExtra(EXTRA_SLIDER_POSITION, position);
+        intent.putExtra(EXTRA_SLIDER_POSITION_VALUE, position_value);
+        mContext.sendBroadcastAsUser(intent, UserHandle.CURRENT);
+        intent.setFlags(Intent.FLAG_RECEIVER_REGISTERED_ONLY);
     }
 }
