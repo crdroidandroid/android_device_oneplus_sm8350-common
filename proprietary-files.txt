@@ -120,6 +120,12 @@ system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
 # Camera
+system_ext/lib64/libCameraMDMHelper.so
+system_ext/lib64/libopcameralib-em.so
+system_ext/lib64/vendor.oneplus.hardware.camera@1.0.so
+system_ext/lib64/vendor.oneplus.hardware.camera@1.0-adapter-helper.so
+system_ext/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so
+system_ext/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0-adapter-helper.so
 vendor/bin/hw/vendor.oneplus.hardware.camera@1.0-service
 vendor/bin/hw/vendor.oneplus.hardware.CameraMDMHIDL@1.0-service
 vendor/etc/init/vendor.oneplus.hardware.camera@1.0-service.rc
@@ -250,6 +256,8 @@ vendor/lib64/libdualcam_optical_zoom_control.so
 vendor/lib64/libdualcam_video_optical_zoom.so
 vendor/lib64/libdualcamirfusion.arcsoft.so
 vendor/lib64/libEIS.so
+vendor/lib64/libFaceBeautyCap.so
+vendor/lib64/libFaceBeautyPre.so
 vendor/lib64/libfastov_dsp.so
 vendor/lib64/libhta.so
 vendor/lib64/libhwconfigurationutil.so
