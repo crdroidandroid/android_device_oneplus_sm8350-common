@@ -1,3 +1,16 @@
+persist.camera.logInfoMask                u:object_r:exported_default_prop:s0
+persist.camera.logVerboseMask             u:object_r:exported_default_prop:s0
+persist.camera.logWarningMask             u:object_r:exported_default_prop:s0
+persist.camera.OverrideLogLevels          u:object_r:exported_default_prop:s0
+persist.camera.assert.panic               u:object_r:exported_default_prop:s0
+persist.sys.assert.panic                  u:object_r:exported_default_prop:s0
+persist.sys.log.                          u:object_r:exported_default_prop:s0
+ro.camera.req.fmq.size                    u:object_r:exported_default_prop:s0
+ro.camera.res.fmq.size                    u:object_r:exported_default_prop:s0
+vendor.oneplus.                           u:object_r:exported_default_prop:s0
+persist.vendor.diag.max.num               u:object_r:exported_radio_prop:s0
+persist.vendor.diag.max.size              u:object_r:exported_radio_prop:s0
+ro.ril.supportLTE                         u:object_r:radio_prop:s0
 persist.vendor.bluetooth.a2dp.            u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.bluetooth.bt.uart.log      u:object_r:vendor_oem_bluetooth_prop:s0
 persist.vendor.ese.                       u:object_r:vendor_nfc_prop:s0
@@ -29,7 +42,9 @@ ro.vendor.product.manufacturer.db         u:object_r:vendor_db_security_prop:s0
 vendor.calibration.fingerprint            u:object_r:vendor_fingerprint_prop:s0
 vendor.copy.opdiagnose.data               u:object_r:vendor_shell_prop:s0
 vendor.nfc.                               u:object_r:vendor_nfc_prop:s0
+vendor.oem.bt.addr                        u:object_r:vendor_oem_bluetooth_prop:s0
 vendor.oem.rbr.log.clean                  u:object_r:vendor_default_prop:s0
+oem.rbr.log.clean                         u:object_r:vendor_default_prop:s0
 vendor.oem.wifi.socket.quit               u:object_r:vendor_set_wlan_prop:s0
 vendor.service.wifi.socket.enable         u:object_r:vendor_oem_wifi_prop:s0
 vendor.service.wifi.socket.mdm.enable     u:object_r:vendor_oem_wifi_prop:s0

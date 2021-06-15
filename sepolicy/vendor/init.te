@@ -1,0 +1,7 @@
+allow init op1_file:filesystem { mount relabelfrom relabelto };
+allow init op1_file:dir { ioctl read write getattr lock relabelto mounton open watch watch_reads add_name remove_name search };
+allow init op1_file:file { ioctl read write create getattr setattr lock append map unlink rename open watch watch_reads };
+
+allow init op2_file:filesystem { mount relabelfrom relabelto };
+allow init op2_file:dir { ioctl read write getattr lock relabelto mounton open watch watch_reads add_name remove_name search };
+allow init op2_file:file { ioctl read write create getattr setattr lock append map unlink rename open watch watch_reads };
