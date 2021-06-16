@@ -1,2 +1,5 @@
 allow system_server lineage_data_file:dir search;
 allow system_server lineage_data_file:file r_file_perms;
+allow system_server vendor_proc_shs:dir search;
+allow system_server proc_touchpanel:dir search;
+binder_call(system_server, hal_cameraHIDL_default)
