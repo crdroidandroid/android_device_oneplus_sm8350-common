@@ -77,4 +77,20 @@ public class Utils {
         }
         return defValue;
     }
+
+    /**
+     * Check if the specified file exists.
+     * @param filename      The filename
+     * @return              Whether the file exists or not
+     */
+    public static boolean fileExists(String filename) {
+        if (filename == null) {
+            return false;
+        }
+        return new File(filename).exists();
+    }
+
+    public static boolean fileWritable(String filename) {
+        return fileExists(filename) && new File(filename).canWrite();
+    }
 }
