@@ -164,6 +164,9 @@ on boot
     # also allow gain customization via persistent property
     write /sys/class/leds/vibrator/gain ${persist.vendor.vib.gain:-0x55}
 
+    # make the selinux kernel policy world-readable
+    chmod 0444 /sys/fs/selinux/policy
+
 on property:vendor.display.lcd_density=560
    setprop dalvik.vm.heapgrowthlimit 256m
 
