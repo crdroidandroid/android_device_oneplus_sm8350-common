@@ -1,0 +1,2 @@
+allow system_server lineage_data_file:dir search;
+allow system_server lineage_data_file:file r_file_perms;

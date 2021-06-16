@@ -221,6 +221,7 @@ PRODUCT_PACKAGES += \
     init.oem.rc \
     init.oem_ftm.rc \
     init.oem_rf.rc \
+    init.opcamera.rc \
     init.oplus_chg.sh \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \

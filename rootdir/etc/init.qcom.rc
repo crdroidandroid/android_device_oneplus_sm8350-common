@@ -413,11 +413,6 @@ on post-fs-data
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system drmrpc
 
-    mkdir /data/misc/lineage 0770 cameraserver audio
-    write /data/misc/lineage/client_package_name 0
-    chown cameraserver audio /data/misc/lineage/client_package_name
-    chmod 0644 /data/misc/lineage/client_package_name
-
 service nqnfcinfo /system/vendor/bin/nqnfcinfo
     class late_start
     group nfc
