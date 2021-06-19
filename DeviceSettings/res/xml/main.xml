@@ -10,7 +10,9 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:settings="http://schemas.android.com/apk/res/org.lineageos.device.DeviceSettings">
+
     <PreferenceCategory
         android:key="slider"
         android:title="@string/notification_slider_category_title">
@@ -46,11 +48,17 @@
     <PreferenceCategory
         android:key="vibrator"
         android:title="@string/category_vibrator">
-        <org.lineageos.device.DeviceSettings.VibratorStrengthPreference
+
+        <org.lineageos.device.DeviceSettings.CustomSeekBarPreference
             android:key="vib_strength"
             android:icon="@drawable/ic_intensity_icon"
             android:title="@string/vib_strength_title_head"
-            android:summary="@string/vib_strength_summary_head" />
+            android:summary="@string/vib_strength_summary_head"
+            android:persistent="true"
+            android:max="5"
+            android:min="0"
+            settings:units=""
+            android:defaultValue="3" />
     </PreferenceCategory>
 
     <PreferenceCategory

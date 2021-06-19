@@ -28,6 +28,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.UserHandle;
+import android.os.Vibrator;
 import android.provider.Settings;
 import android.text.TextUtils;
 import android.view.MenuItem;
@@ -51,20 +52,23 @@ public class DeviceSettings extends PreferenceFragment
     public static final String KEY_SETTINGS_PREFIX = "device_setting_";
     public static final String KEY_VIBSTRENGTH = "vib_strength";
 
+    private static final String FILE_LEVEL = "/sys/devices/platform/soc/88c000.i2c/i2c-10/10-005a/leds/vibrator/level";
+    private static final long testVibrationPattern[] = {0,5};
+    private static final String SETTINGS_KEY = KEY_SETTINGS_PREFIX + KEY_VIBSTRENGTH;
+    private static final String DEFAULT = "3";
+
     private ListPreference mTopKeyPref;
     private ListPreference mMiddleKeyPref;
     private ListPreference mBottomKeyPref;
-    private VibratorStrengthPreference mVibratorStrength;
+
+    private CustomSeekBarPreference mVibratorStrengthPreference;
+
+    private Vibrator mVibrator;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.main);
         getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
-
-        mVibratorStrength = (VibratorStrengthPreference) findPreference(KEY_VIBSTRENGTH);
-        if (mVibratorStrength == null || !VibratorStrengthPreference.isSupported()) {
-            getPreferenceScreen().removePreference((Preference) findPreference("vibrator"));
-        }
 
         mTopKeyPref = (ListPreference) findPreference(Constants.NOTIF_SLIDER_TOP_KEY);
         mTopKeyPref.setValueIndex(Constants.getPreferenceInt(getContext(), Constants.NOTIF_SLIDER_TOP_KEY));
@@ -75,6 +79,12 @@ public class DeviceSettings extends PreferenceFragment
         mBottomKeyPref = (ListPreference) findPreference(Constants.NOTIF_SLIDER_BOTTOM_KEY);
         mBottomKeyPref.setValueIndex(Constants.getPreferenceInt(getContext(), Constants.NOTIF_SLIDER_BOTTOM_KEY));
         mBottomKeyPref.setOnPreferenceChangeListener(this);
+
+        mVibrator = (Vibrator) getContext().getSystemService(Context.VIBRATOR_SERVICE);
+
+        mVibratorStrengthPreference =  (CustomSeekBarPreference) findPreference(KEY_VIBSTRENGTH);
+        mVibratorStrengthPreference.setValue(Integer.parseInt(Utils.getFileValue(FILE_LEVEL, DEFAULT)));
+        mVibratorStrengthPreference.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -87,6 +97,11 @@ public class DeviceSettings extends PreferenceFragment
             return true;
         } else if (preference == mBottomKeyPref) {
             Constants.setPreferenceInt(getContext(), preference.getKey(), Integer.parseInt((String) newValue));
+            return true;
+        } else if (preference == mVibratorStrengthPreference) {
+    	    Utils.writeValue(FILE_LEVEL, String.valueOf(newValue));
+            Settings.System.putString(getContext().getContentResolver(), SETTINGS_KEY, String.valueOf(newValue));
+            mVibrator.vibrate(testVibrationPattern, -1);
             return true;
         }
         return false;
