@@ -1,6 +1,8 @@
 allow vendor_init tmpfs:chr_file { read open };
 allow vendor_init tmpfs:dir { create_dir_perms mounton };
 
+allow vendor_init sysfs_oem:file create_file_perms;
+
 allow vendor_init op2_file:file create_file_perms;
 
 allow vendor_init proc_direct_swappiness:file w_file_perms;
