@@ -54,9 +54,6 @@
         <!--OP_FEATURE_MM_AW START-->
         <library name="haptic_effect" path="libhaptic_effect.so"/>
         <!--OP_FEATURE_MM_AW END-->
-        <!--OP_FEATURE_MM_AUDIO_OZO START -->
-        <library name="ozo_processing" path="libozoprocessing.so"/>
-        <!--OP_FEATURE_MM_AUDIO_OZO END -->
     </libraries>
     <effects>
         <effectProxy name="bassboost" library="proxy" uuid="14804144-a5ee-4d24-aa88-0002a5d5c51b">
@@ -119,9 +116,6 @@
         <!--OP_FEATURE_MM_AW START-->
         <effect name="haptic" library="haptic_effect" uuid="17852d51-161e-11e2-892e-0800200c9a66"/>
         <!--OP_FEATURE_MM_AW END-->
-        <!--OP_FEATURE_MM_AUDIO_OZO START -->
-        <effect name="ozo" library="ozo_processing" uuid="7e384a3b-7850-4a64-a097-884250d8a737"/>
-        <!--OP_FEATURE_MM_AUDIO_OZO END -->
     </effects>
     <postprocess>
         <stream type="music">
