@@ -2,4 +2,8 @@ allow system_server lineage_data_file:dir search;
 allow system_server lineage_data_file:file r_file_perms;
 allow system_server vendor_proc_shs:dir search;
 allow system_server proc_touchpanel:dir search;
+
+allow system_server sysfs_tri_state_key:file r_file_perms;
+allow system_server sysfs_tri_state_key:lnk_file r_file_perms;
+
 binder_call(system_server, hal_cameraHIDL_default)

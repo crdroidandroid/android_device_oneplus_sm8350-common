@@ -25,8 +25,10 @@
     <uses-permission android:name="android.permission.INJECT_EVENTS"/>
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS" />
 
-    <protected-broadcast android:name=">org.lineageos.device.DeviceSettings.UPDATE_SLIDER_POSITION" />
+    <protected-broadcast android:name="org.lineageos.device.DeviceSettings.UPDATE_SLIDER_SETTINGS" />
+    <protected-broadcast android:name="org.lineageos.device.DeviceSettings.UPDATE_SLIDER_POSITION" />
 
     <uses-sdk
         android:minSdkVersion="24" />
@@ -34,7 +36,9 @@
     <application
         android:icon="@drawable/ic_settings_device"
         android:label="@string/device_title"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:defaultToDeviceProtectedStorage="true"
+        android:directBootAware="true">
 
         <!-- Device Settings -->
         <activity
@@ -58,6 +62,12 @@
 
         <activity android:name=".DeviceSettings" />
         <activity android:name=".KeyHandler" />
+
+        <receiver android:name=".Startup" >
+            <intent-filter>
+                <action android:name="lineageos.intent.action.INITIALIZE_LINEAGE_HARDWARE" />
+            </intent-filter>
+        </receiver>
 
         <!-- Search Provider -->
         <provider
