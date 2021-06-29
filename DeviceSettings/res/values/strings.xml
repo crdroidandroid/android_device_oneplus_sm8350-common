@@ -34,10 +34,6 @@
     <string name="vib_strength_title_head">Strength</string>
     <string name="vib_strength_summary_head">Define the strength of the vibrator</string>
 
-    <!-- Dolby -->
-    <string name="dolby_category">Dolby</string>
-    <string name="dolby_title">Dolby Atmos</string>
-
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">Value: <xliff:g id="v">%s</xliff:g></string>
     <string name="custom_seekbar_default_value">by default</string>

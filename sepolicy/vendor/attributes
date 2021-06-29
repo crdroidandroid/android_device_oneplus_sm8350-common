@@ -15,10 +15,6 @@ attribute hal_display_iris;
 attribute hal_display_iris_client;
 attribute hal_display_iris_server;
 
-attribute hal_dms;
-attribute hal_dms_client;
-attribute hal_dms_server;
-
 attribute hal_ifaa;
 attribute hal_ifaa_client;
 attribute hal_ifaa_server;

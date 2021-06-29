@@ -60,18 +60,4 @@
             settings:units=""
             android:defaultValue="3" />
     </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="dolby"
-        android:title="@string/dolby_category">
-
-        <Preference
-            android:key="audio_dolby_atmos"
-            android:icon="@drawable/ic_dolby_atmos"
-            android:title="@string/dolby_title">
-            <intent
-                 android:targetPackage="com.oneplus.sound.tuner"
-                 android:targetClass="com.oneplus.sound.tuner.panoramic.DolbyPanoramicSoundActivity" />
-        </Preference>
-    </PreferenceCategory>
 </PreferenceScreen>
