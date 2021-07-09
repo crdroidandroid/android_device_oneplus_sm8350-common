@@ -5,6 +5,10 @@ persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
 
 # Bluetooth
 ro.bluetooth.library_name=libbluetooth_qti.so
+persist.vendor.btstack.aac_frm_ctl.enabled=true
+persist.vendor.btstack.enable.twsplus=false
+persist.vendor.bt.a2dp.hal.implementation=true
+persist.vendor.btstack.enable.lpa=true
 
 # Camera
 camera.disable_zsl_mode=true
