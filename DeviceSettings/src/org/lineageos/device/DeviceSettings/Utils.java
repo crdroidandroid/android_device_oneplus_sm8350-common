@@ -77,6 +77,14 @@ public class Utils {
         return defValue;
     }
 
+    public static boolean getFileValueAsBoolean(String filename, boolean defValue) {
+        String fileValue = readLine(filename);
+        if (fileValue != null) {
+            return (fileValue.equals("0") ? false : true);
+        }
+        return defValue;
+    }
+
     /**
      * Check if the specified file exists.
      * @param filename      The filename

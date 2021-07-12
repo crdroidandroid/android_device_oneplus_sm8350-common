@@ -43,8 +43,10 @@ public class DeviceSettings extends PreferenceFragment
         implements Preference.OnPreferenceChangeListener {
     private static final String TAG = DeviceSettings.class.getSimpleName();
 
+    private static final String KEY_USB2_SWITCH = "usb2_fast_charge";
     private static final String KEY_VIBSTRENGTH = "vib_strength";
 
+    private static final String FILE_FAST_CHARGE = "/sys/kernel/fast_charge/force_fast_charge";
     private static final String FILE_LEVEL = "/sys/devices/platform/soc/88c000.i2c/i2c-10/10-005a/leds/vibrator/level";
     private static final long testVibrationPattern[] = {0,5};
     private static final String DEFAULT = "3";
@@ -52,6 +54,8 @@ public class DeviceSettings extends PreferenceFragment
     private ListPreference mTopKeyPref;
     private ListPreference mMiddleKeyPref;
     private ListPreference mBottomKeyPref;
+
+    private SwitchPreference mUSB2FastChargeModeSwitch;
 
     private CustomSeekBarPreference mVibratorStrengthPreference;
 
@@ -64,6 +68,16 @@ public class DeviceSettings extends PreferenceFragment
 
         mVibrator = (Vibrator) getContext().getSystemService(Context.VIBRATOR_SERVICE);
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getContext());
+
+        mUSB2FastChargeModeSwitch = (SwitchPreference) findPreference(KEY_USB2_SWITCH);
+        if (Utils.fileWritable(FILE_FAST_CHARGE)) {
+            mUSB2FastChargeModeSwitch.setEnabled(true);
+            mUSB2FastChargeModeSwitch.setChecked(sharedPrefs.getBoolean(KEY_USB2_SWITCH,
+                Utils.getFileValueAsBoolean(FILE_FAST_CHARGE, false)));
+            mUSB2FastChargeModeSwitch.setOnPreferenceChangeListener(this);
+        } else {
+            mUSB2FastChargeModeSwitch.setEnabled(false);
+        }
 
         mVibratorStrengthPreference =  (CustomSeekBarPreference) findPreference(KEY_VIBSTRENGTH);
         if (Utils.fileWritable(FILE_LEVEL)) {
@@ -95,7 +109,13 @@ public class DeviceSettings extends PreferenceFragment
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mVibratorStrengthPreference) {
+        if (preference == mUSB2FastChargeModeSwitch) {
+            boolean enabled = (Boolean) newValue;
+            SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getContext());
+            sharedPrefs.edit().putBoolean(KEY_USB2_SWITCH, enabled).commit();
+    	    Utils.writeValue(FILE_FAST_CHARGE, enabled ? "1" : "0");
+            return true;
+        } else if (preference == mVibratorStrengthPreference) {
             int value = Integer.parseInt(newValue.toString());
             SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getContext());
             sharedPrefs.edit().putInt(KEY_VIBSTRENGTH, value).commit();
@@ -347,6 +367,15 @@ public class DeviceSettings extends PreferenceFragment
             Integer.parseInt(actionMiddle),
             Integer.parseInt(actionBottom)
         });
+    }
+
+    public static void restoreFastChargeSetting(Context context) {
+        if (Utils.fileWritable(FILE_FAST_CHARGE)) {
+            SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
+            boolean value = sharedPrefs.getBoolean(KEY_USB2_SWITCH,
+                Utils.getFileValueAsBoolean(FILE_FAST_CHARGE, false));
+            Utils.writeValue(FILE_FAST_CHARGE, value ? "1" : "0");
+        }
     }
 
     public static void restoreVibStrengthSetting(Context context) {
