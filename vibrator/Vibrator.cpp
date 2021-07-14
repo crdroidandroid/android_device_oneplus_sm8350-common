@@ -588,11 +588,6 @@ ndk::ScopedAStatus Vibrator::perform(Effect effect, EffectStrength es, const std
                 }
             }
 
-            // Restore gain from persist prop
-            char gain[PROPERTY_VALUE_MAX]{};
-            property_get("persist.vendor.vib.gain", gain, "0x55");
-            ledVib.write_value("/sys/class/leds/vibrator/gain", gain);
-
             // Return magic value for play length so that we won't end up calling on() / off()
             playLengthMs = effect == Effect::DOUBLE_CLICK ? 250 : 150;
         } else {
