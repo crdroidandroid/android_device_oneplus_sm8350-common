@@ -88,7 +88,8 @@ on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
     # USB 2.0 Force Fast Charge
-    chown system system /sys/kernel/fast_charge/force_fast_charge
+    chown system system /sys/module/oplus_chg/parameters/force_fast_charge
+    chown system system /sys/module/oplus_chg/parameters/ffc_val
 
     # Vibrator
     chown system system /sys/devices/platform/soc/88c000.i2c/i2c-10/10-005a/leds/vibrator/level
