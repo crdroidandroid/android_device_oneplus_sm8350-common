@@ -307,6 +307,7 @@ vendor/lib64/liboptical_zoom_vs.so
 vendor/lib64/libos.so
 vendor/lib64/libPerfectlyClearCrux.so
 vendor/lib64/libPerfectlyClearCruxOpt.so
+vendor/lib64/libPlatformValidatorShared.so
 vendor/lib64/libPolarrRender.so
 vendor/lib64/libpreview.decision.so
 vendor/lib64/libPreviewAlgo.dummy.so
@@ -1374,7 +1375,9 @@ vendor/lib/libqconfigclient.so
 vendor/lib/libvppclient.so
 vendor/lib/libvpphcp.so
 vendor/lib/libvpphvx.so
+vendor/lib/libvppimmotion.so
 vendor/lib/libvpplibrary.so
+vendor/lib/libvpptestutils.so
 vendor/lib/vendor.qti.hardware.qconfig@1.0.so
 vendor/lib/vendor.qti.hardware.vpp@1.1.so
 vendor/lib/vendor.qti.hardware.vpp@1.2.so
@@ -1384,7 +1387,9 @@ vendor/lib64/libqconfigclient.so
 vendor/lib64/libvppclient.so
 vendor/lib64/libvpphcp.so
 vendor/lib64/libvpphvx.so
+vendor/lib64/libvppimmotion.so
 vendor/lib64/libvpplibrary.so
+vendor/lib64/libvpptestutils.so
 vendor/lib64/vendor.qti.hardware.qconfig@1.0.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
