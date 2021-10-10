@@ -136,6 +136,7 @@ system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 # Camera
 system_ext/lib64/libCameraMDMHelper.so
 system_ext/lib64/libopcameralib-em.so
+system_ext/lib64/libsmomo.qti.so
 system_ext/lib64/vendor.oneplus.hardware.camera@1.0.so
 system_ext/lib64/vendor.oneplus.hardware.camera@1.0-adapter-helper.so
 system_ext/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so
