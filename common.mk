@@ -495,7 +495,7 @@ PRODUCT_PACKAGES += \
 # tri-state-key
 PRODUCT_PACKAGES += \
     DeviceSettings \
-    tri-state-key-calibrate
+    tri-state-key_daemon.vendor
 
 # Trust HAL
 PRODUCT_PACKAGES += \
