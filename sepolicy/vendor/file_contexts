@@ -97,3 +97,7 @@
 /sys/devices/virtual/misc/msm_qcelp/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/misc/msm_wma/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/misc/msm_wmapro/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+
+# USB fast charge
+/sys/module/oplus_chg/parameters/force_fast_charge      u:object_r:sysfs_fastcharge:s0
+/sys/module/oplus_chg/parameters/ffc_val                u:object_r:sysfs_fastcharge:s0

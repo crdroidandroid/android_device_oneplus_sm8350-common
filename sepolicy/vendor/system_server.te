@@ -1,0 +1,2 @@
+allow system_server sysfs_tri_state_key:file r_file_perms;
+allow system_server sysfs_tri_state_key:lnk_file r_file_perms;
