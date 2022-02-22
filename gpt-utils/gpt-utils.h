@@ -80,8 +80,15 @@ extern "C" {
 #define AB_SLOT_B_SUFFIX                "_b"
 #define PTN_XBL                         "xbl"
 #define PTN_XBL_CFG                     "xbl_config"
-#define PTN_SWAP_LIST                   PTN_XBL, PTN_XBL_CFG, "sbl1", "rpm", "tz", "aboot", "abl", "hyp", "lksecapp", "keymaster", "cmnlib", "cmnlib32", "cmnlib64", "pmic", "apdp", "devcfg", "hosd", "keystore", "msadp", "mdtp", "mdtpsecapp", "dsp", "aop", "qupfw", "vbmeta", "dtbo", "imagefv", "ImageFv", "multiimgoem", "multiimgqti", "uefisecapp", "vm-bootsys", "shrm", "cpucp"
-#define AB_PTN_LIST PTN_SWAP_LIST, "boot", "vendor_boot", "system", "vendor", "odm", "modem", "bluetooth"
+#define PTN_SWAP_LIST                   PTN_XBL, PTN_XBL_CFG, \
+            "sbl1", "rpm", "tz", "aboot", "abl", "bluetooth", "hyp", "lksecapp", \
+            "keymaster", "cmnlib", "cmnlib32", "cmnlib64", "pmic", "apdp", "devcfg", \
+            "hosd", "keystore", "msadp", "mdtp", "mdtpsecapp", "dsp", "aop", "qupfw", \
+            "vbmeta", "dtbo", "imagefv", "ImageFv", "multiimgoem", "multiimgqti", \
+            "uefisecapp", "vm-bootsys", "shrm", "cpucp"
+#define AB_PTN_LIST                     PTN_SWAP_LIST, \
+            "boot", "modem", "odm", "product", "system", "system_ext", "vendor", \
+            "vendor_boot"
 #define BOOT_DEV_DIR    "/dev/block/bootdevice/by-name"
 
 /******************************************************************************
