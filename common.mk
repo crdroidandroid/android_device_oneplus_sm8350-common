@@ -141,6 +141,9 @@ PRODUCT_COPY_FILES += \
 
 $(call soong_config_set,surfaceflinger,udfps_lib,//hardware/oplus:libudfps_extension.oplus)
 
+# FOD
+TARGET_HAS_UDFPS := true
+
 # GMS
 ifeq ($(WITH_GMS),true)
 GMS_MAKEFILE=gms_minimal.mk
