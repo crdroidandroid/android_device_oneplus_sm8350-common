@@ -400,9 +400,12 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2.vendor \
-    android.hardware.secure_element@1.2.vendor \
+    android.hardware.nfc@1.2 \
+    android.hardware.nfc@1.2-service \
     com.android.nfc_extras \
+    com.gsma.services.nfc \
+    QuickAccessWallet \
+    NfcNci \
     SecureElement \
     Tag
 
@@ -454,6 +457,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor \
     libprotobuf-cpp-full \
     librmnetctl \
     libxml2
