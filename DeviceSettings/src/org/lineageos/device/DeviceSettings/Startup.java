@@ -34,6 +34,7 @@ public class Startup extends BroadcastReceiver {
         if (lineageos.content.Intent.ACTION_INITIALIZE_LINEAGE_HARDWARE.equals(action)) {
             DeviceSettings.restoreSliderStates(context);
             DeviceSettings.restoreFastChargeSetting(context);
+            DeviceSettings.restoreVibStrengthSetting(context);
         }
     }
 }

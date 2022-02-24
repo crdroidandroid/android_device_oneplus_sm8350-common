@@ -62,4 +62,20 @@
             android:summary="@string/usb2_fc_summary"
             android:title="@string/usb2_fc_title" />
     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="vibrator"
+        android:title="@string/category_vibrator">
+
+        <org.lineageos.device.DeviceSettings.CustomSeekBarPreference
+            android:key="vib_strength"
+            android:icon="@drawable/ic_intensity_icon"
+            android:title="@string/vib_strength_title_head"
+            android:summary="@string/vib_strength_summary_head"
+            android:persistent="true"
+            android:max="5"
+            android:min="0"
+            settings:units=""
+            android:defaultValue="3" />
+    </PreferenceCategory>
 </PreferenceScreen>

@@ -101,3 +101,6 @@
 # USB fast charge
 /sys/module/oplus_chg/parameters/force_fast_charge      u:object_r:sysfs_fastcharge:s0
 /sys/module/oplus_chg/parameters/ffc_val                u:object_r:sysfs_fastcharge:s0
+
+# Vibrator
+/sys/devices/platform/soc/88c000.i2c/i2c-10/10-005a/leds/vibrator/level     u:object_r:sysfs_vibrator:s0
