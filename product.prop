@@ -5,5 +5,9 @@ audio.offload.min.duration.secs=30
 audio.offload.video=true
 ro.af.client_heap_size_kbyte=7168
 
+# Camera
+persist.vendor.camera.privapp.list=com.oplus.camera,com.android.camera,org.codeaurora.snapcam
+vendor.camera.aux.packagelist=com.oplus.camera,com.android.camera,org.codeaurora.snapcam
+
 # GMS
 ro.opa.device_model_id=ga-oplus-skill-os121-211011
