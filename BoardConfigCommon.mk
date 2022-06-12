@@ -66,6 +66,9 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 # Bluetooth
 TARGET_USE_QTI_BT_STACK := true
 
+# Camera
+TARGET_USES_QTI_CAMERA_DEVICE := true
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
