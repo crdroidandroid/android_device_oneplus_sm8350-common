@@ -5,6 +5,9 @@
 -->
 <resources>
 
+    <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
+    <bool name="config_unplugTurnsOnScreen">true</bool>
+
     <!-- Whether doze feature is enabled by default in settings -->
     <bool name="config_doze_enabled_by_default">true</bool>
 
