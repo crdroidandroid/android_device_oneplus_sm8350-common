@@ -53,6 +53,22 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="dolby"
+        android:title="@string/dolby_category">
+
+       <Preference
+            android:key="audio_dolby_atmos"
+            android:icon="@drawable/ic_dolby"
+            android:title="@string/dolby_title"
+            android:summary="@string/dolby_summary"
+            android:persistent="false">
+            <intent
+                 android:targetPackage="com.dolby.daxappui"
+                 android:targetClass="com.dolby.daxappui.MainActivity" />
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="usb"
         android:title="@string/usb_title">
 
