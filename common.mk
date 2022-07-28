@@ -330,6 +330,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare@1.0-service.oplus
 
+# Oplus Framework
+PRODUCT_PACKAGES += \
+    oplus-fwk
+
+PRODUCT_BOOT_JARS += oplus-fwk
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/hiddenapi-package-whitelist-oplus-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-package-whitelist-oplus-system.xml
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
