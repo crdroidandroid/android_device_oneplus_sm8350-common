@@ -78,6 +78,13 @@ on init
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
+    # Hyper Touch
+    chown system system /proc/touchpanel/game_switch_enable
+
+    # TP Edge Touch Limit
+    chown system system /proc/touchpanel/oplus_tp_direction
+    write /proc/touchpanel/oplus_tp_direction 0
+
     # USB 2.0 Force Fast Charge
     chown system system /sys/module/oplus_chg/parameters/force_fast_charge
     chown system system /sys/module/oplus_chg/parameters/ffc_val
