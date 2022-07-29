@@ -76,4 +76,13 @@
     <string name="dolby_category">Dolby</string>
     <string name="dolby_title">Dolby Atmos</string>
     <string name="dolby_summary">Configure the audio output based on media content</string>
+
+    <!-- Touchpanel -->
+    <string name="touchpanel_title">Touchpanel</string>
+    <string name="game_mode_title">Hyper Touch</string>
+    <string name="game_mode_summary">Hyper Touch can dramatically improving touch response and frame rate stability in games</string>
+    <string name="game_mode_warning">Increases power consumption</string>
+    <string name="edge_touch_title">TP Edge Limit</string>
+    <string name="edge_touch_summary">Disable the touchpanels edge limit</string>
+    <string name="edge_touch_warning">Increases possibility of accidental touch</string>
 </resources>
