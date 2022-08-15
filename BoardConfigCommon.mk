@@ -62,6 +62,9 @@ TARGET_BOOTLOADER_BOARD_NAME := lahaina
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth/include
 
+# Camera
+TARGET_USES_OPLUS_CAMERA := true
+
 # Properties
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop

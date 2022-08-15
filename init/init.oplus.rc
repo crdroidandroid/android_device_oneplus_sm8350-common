@@ -35,6 +35,9 @@ on boot
     chown system system /sys/kernel/oplus_display/notify_fppress
     chown system system /sys/kernel/oplus_display/panel_serial_number
 
+    # OIS
+    chown cameraserver cameraserver /sys/kernel/ois_control/dump_registers
+
     # Sensors
     chown system system /sys/devices/platform/soc/soc:sensor_fb/adsp_notify
 
