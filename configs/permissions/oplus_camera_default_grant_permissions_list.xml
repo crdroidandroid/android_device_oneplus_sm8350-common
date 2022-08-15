@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<exceptions>
+    <exception package="com.oplus.camera" >
+        <permission name="android.permission.CAMERA"/>
+        <permission name="android.permission.RECORD_AUDIO"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </exception>
+</exceptions>
