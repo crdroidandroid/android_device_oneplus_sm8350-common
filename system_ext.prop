@@ -11,6 +11,12 @@ ro.bluetooth.library_name=libbluetooth_qti.so
 # Display
 debug.sf.enable_hwc_vds=1
 
+# Camera
+ro.oplus.system.camera.name=com.oplus.camera
+ro.oplus.system.camera.flashlight=com.oplus.motor.flashlight
+ro.oplus.camera.video_beauty.prefix=oplus.video.beauty.
+ro.oplus.camera.video.beauty.switch=oplus.switch.video.beauty
+
 # CNE
 persist.vendor.cne.feature=1
 
