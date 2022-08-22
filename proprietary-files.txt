@@ -1095,9 +1095,9 @@ vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 # Dolby-DaxUI - from Custom Modified
 system_ext/etc/permissions/privapp-com.dolby.daxappui.xml|b783016728b17eadfcdad662ccaf546afbeab856
 system_ext/etc/permissions/privapp-com.dolby.daxservice.xml|e61ed4d4cbdf54dee613080d26e3dda75c3ac2f8
-system_ext/etc/sysconfig/config-com.dolby.daxappui.xml|43c610f41061f49959ce07b26c60427b8767e535
-system_ext/etc/sysconfig/config-com.dolby.daxservice.xml|7690774632fe32269657fc1a2a0c941c7cd83f3d
-system_ext/etc/sysconfig/hiddenapi-com.dolby.daxservice.xml|f647356bd3a4bb4174e873e4544c2921d51fd4d2
+system_ext/etc/sysconfig/config-com.dolby.daxappui.xml|d99640e8b0758d1f64063c7e51b94d3631077ccf
+system_ext/etc/sysconfig/config-com.dolby.daxservice.xml|51e1f70e20464c65466a2ad53a3a697fceb023c1
+system_ext/etc/sysconfig/hiddenapi-com.dolby.daxservice.xml|b4455336443968c5f7ac0d39b8c99dd43298681c
 system_ext/priv-app/DaxUI/DaxUI.apk|fdf7b8923550006d5ea8456fe790949c707f65eb
 
 # Dolby - from OnePlus 9 Pro LE2121 11.2.10.10
