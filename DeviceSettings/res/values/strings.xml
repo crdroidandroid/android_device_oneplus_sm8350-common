@@ -74,10 +74,10 @@
 
     <!-- Touchpanel -->
     <string name="touchpanel_title">Touchpanel</string>
-    <string name="game_mode_title">Hyper Touch</string>
-    <string name="game_mode_summary">Hyper Touch can dramatically improving touch response and frame rate stability in games</string>
-    <string name="game_mode_warning">Increases power consumption</string>
-    <string name="edge_touch_title">TP Edge Limit</string>
-    <string name="edge_touch_summary">Disable the touchpanels edge limit</string>
-    <string name="edge_touch_warning">Increases possibility of accidental touch</string>
+    <string name="game_mode_title">Hyper touch</string>
+    <string name="game_mode_summary">Improve touch response and frame rate stability in games</string>
+    <string name="game_mode_warning">May increase power consumption</string>
+    <string name="edge_touch_title">Unlimit edge touch</string>
+    <string name="edge_touch_summary">Improve your multi-touch experience in games</string>
+    <string name="edge_touch_warning">May increase the possibility of accidental touch</string>
 </resources>
