@@ -32,6 +32,7 @@ odm/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so
 odm/lib/rfsa/adsp/libaiboost_skel.so
 odm/lib/rfsa/adsp/libaiboost_skel_v65.so
 odm/lib/rfsa/adsp/libaiboost_skel_v66.so
+odm/lib/rfsa/adsp/libarc_gk_pt_hvx_skel.so
 odm/lib/rfsa/adsp/libarcsoft_dualcam_refocus_5111_skel.so
 odm/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so
 odm/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so
@@ -282,6 +283,7 @@ odm/etc/camera/filters_lut/BycYf7WWz
 odm/etc/camera/filters_lut/DL_D_G4.cube.rgb.bin
 odm/etc/camera/filters_lut/DL_L_B6.cube.rgb.bin
 odm/etc/camera/filters_lut/Delta400.3dl.rgb.bin
+odm/etc/camera/filters_lut/Emerald.cube.rgb.bin
 odm/etc/camera/filters_lut/EyxRbD2UCe
 odm/etc/camera/filters_lut/FaceappGrayscale.cube.rgb.bin
 odm/etc/camera/filters_lut/InsClarendon.cube.rgb.bin
@@ -292,7 +294,9 @@ odm/etc/camera/filters_lut/OPLUSR0604.cube.rgb.bin
 odm/etc/camera/filters_lut/PP1-soft-2.6.CUBE.rgb.bin
 odm/etc/camera/filters_lut/PP2-pop-4.1.CUBE.rgb.bin
 odm/etc/camera/filters_lut/PP3-mono-3.3.CUBE.rgb.bin
+odm/etc/camera/filters_lut/Radiance.cube.rgb.bin
 odm/etc/camera/filters_lut/SJ3mbr6ef
+odm/etc/camera/filters_lut/Serenity.cube.rgb.bin
 odm/etc/camera/filters_lut/SkpZ8ebbz
 odm/etc/camera/filters_lut/SnapseedBright.cube.rgb.bin
 odm/etc/camera/filters_lut/SweetSnapAlice-3.CUBE.rgb.bin
@@ -726,6 +730,8 @@ odm/lib64/libarcsoft_high_dynamic_range_couple.so
 odm/lib64/libarcsoft_high_dynamic_range_couple_v4.so
 odm/lib64/libarcsoft_high_dynamic_range_v4.so
 odm/lib64/libarcsoft_lensstaindetection.so
+odm/lib64/libarcsoft_long_exposure_capture.so
+odm/lib64/libarcsoft_long_exposure_preview.so
 odm/lib64/libarcsoft_low_light_hdr.so
 odm/lib64/libarcsoft_pic_best.so
 odm/lib64/libarcsoft_portraitSN_hvx_stub.so
@@ -777,6 +783,7 @@ odm/lib64/libstdc++.so
 odm/lib64/libstface_fd_api.so
 odm/lib64/libstfd_mobile_api.so
 odm/lib64/libsymphony-cpu.so
+odm/lib64/libsymphonypower.so
 odm/lib64/libtriplecam_image_optical_zoom.so
 odm/lib64/libtriplecam_optical_zoom_control.so
 odm/lib64/libtriplecam_video_optical_zoom.so
