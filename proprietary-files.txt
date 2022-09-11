@@ -114,6 +114,7 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 odm/lib/libaudioEngineerTest.so
 odm/lib/liblvimfs.so
 odm/lib/liblvimfs_wrapper.so
+odm/lib/libui.so
 vendor/lib/hw/audio.primary.lahaina.so
 vendor/lib/liba2dpoffload.so
 vendor/lib/libextcamera_client.so
