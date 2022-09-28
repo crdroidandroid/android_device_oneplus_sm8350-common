@@ -16,5 +16,10 @@
     "repository": "crdroidandroid/proprietary_vendor_oneplus_sm8350-common",
     "target_path": "vendor/oneplus/sm8350-common",
     "remote": "crdroid-gitlab"
+  },
+  {
+    "repository": "crdroidandroid/android_vendor_oneplus-firmware",
+    "target_path": "vendor/oneplus-firmware",
+    "remote": "crdroid-gitlab"
   }
 ]
