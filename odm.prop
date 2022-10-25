@@ -4,6 +4,7 @@ persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
 persist.vendor.audio.spv4.enable=false
 persist.vendor.audio.vbat.enabled=false
 ro.config.media_vol_steps=30
+ro.config.media_vol_default=15
 ro.config.vc_call_vol_steps=9
 ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.qti.va_odm.support=1
@@ -30,4 +31,4 @@ ro.vendor.oplus.radio.project=2
 ro.vendor.oplus.radio.sar_regionmark=FCC
 
 # SVN
-ro.build.version.svn=61
+ro.build.version.svn=18
