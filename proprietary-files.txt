@@ -112,6 +112,7 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
 # Audio
 odm/lib/libaudioEngineerTest.so
+odm/lib/libbluetooth_audio_extend_factory_client.so
 odm/lib/liblvimfs.so
 odm/lib/liblvimfs_wrapper.so
 vendor/lib/hw/audio.primary.lahaina.so
