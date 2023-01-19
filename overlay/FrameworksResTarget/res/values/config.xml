@@ -128,4 +128,11 @@
     <!-- Whether key handler sends intent when changing slider position -->
     <string name="config_alertSliderIntent">org.lineageos.device.DeviceSettings.UPDATE_SLIDER_POSITION</string>
 
+    <!-- Parallel space blocklist -->
+    <string-array name="config_parallelSpaceBlocklist">
+        <item>com.dolby.daxservice</item>
+        <item>com.motorola.dolby.dolbyui</item>
+        <item>org.lineageos.settings.device</item>
+        <item>org.lineageos.device.DeviceSettings</item>
+    </string-array>
 </resources>
