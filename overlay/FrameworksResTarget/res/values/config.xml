@@ -112,4 +112,11 @@
          auto-brightness adjustment setting. -->
     <fraction name="config_autoBrightnessAdjustmentMaxGamma">150%</fraction>
 
+    <!-- Parallel space blocklist -->
+    <string-array name="config_parallelSpaceBlocklist">
+        <item>com.dolby.daxservice</item>
+        <item>com.motorola.dolby.dolbyui</item>
+        <item>org.lineageos.settings.device</item>
+        <item>org.lineageos.device.DeviceSettings</item>
+    </string-array>
 </resources>
