@@ -1159,7 +1159,6 @@ vendor/lib/vendor.qti.diaghal@1.0.so
 vendor/lib64/vendor.qti.diaghal@1.0.so
 
 # Display (CWB)
-odm/etc/vintf/manifest/manifest_oplus_cwb.xml
 odm/lib64/vendor.oplus.hardware.cwb@1.0.so
 vendor/lib64/libcwb_sm8350.so
 
@@ -1778,9 +1777,6 @@ vendor/lib64/libperipheral_client.so
 vendor/lib64/libspcom.so
 
 # Perf (OPLUS)
-odm/bin/hw/vendor.oplus.hardware.performance@1.0-service
-odm/etc/init/vendor.oplus.hardware.performance@1.0-service.rc
-odm/etc/vintf/manifest/manifest_oplus_performance.xml
 odm/lib/vendor.oplus.hardware.performance@1.0.so
 odm/lib64/vendor.oplus.hardware.performance@1.0.so
 
