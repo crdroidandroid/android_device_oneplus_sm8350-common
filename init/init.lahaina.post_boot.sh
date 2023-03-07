@@ -29,6 +29,9 @@ echo 0-6 > /dev/cpuset/foreground/cpus
 echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 echo "schedutil" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
 echo "schedutil" > /sys/devices/system/cpu/cpu7/cpufreq/scaling_governor
+echo 20000 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
+echo 10000 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us
+echo 5000 > /sys/devices/system/cpu/cpu7/cpufreq/schedutil/down_rate_limit_us
 echo 1 > /dev/stune/foreground/schedtune.prefer_idle
 echo 0 > /dev/stune/foreground/schedtune.prefer_high_cap
 echo 0 > /dev/stune/foreground/schedtune.boost
