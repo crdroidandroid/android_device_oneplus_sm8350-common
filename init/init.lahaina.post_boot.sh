@@ -24,6 +24,7 @@ echo 128 > /sys/block/dm-9/queue/read_ahead_kb
 echo 0-1 > /dev/cpuset/background/cpus
 echo 0-3 > /dev/cpuset/system-background/cpus
 echo 0-6 > /dev/cpuset/foreground/cpus
+echo 1-2 > /dev/cpuset/audio-app/cpus
 
 # Setup runtime schedTune
 echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
