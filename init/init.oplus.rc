@@ -27,6 +27,9 @@ on early-boot
     write /sys/bus/msm_subsys/devices/subsys10/restart_level RELATED
 
 on boot
+    # Battery
+    chown system system /sys/devices/platform/soc/soc:oplus,chg_intf/oplus_chg/battery/mmi_charging_enable
+
     # Display
     chown system system /dev/oplus_display
     chown system system /sys/kernel/oplus_display/dimlayer_bl_en
