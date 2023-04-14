@@ -165,6 +165,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     OplusDoze
 
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    persist.sys.brightness.low.gamma=true
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
