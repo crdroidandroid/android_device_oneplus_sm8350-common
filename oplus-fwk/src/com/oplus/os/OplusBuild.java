@@ -6,4 +6,10 @@ public class OplusBuild {
     public static int getOplusOSVERSION() {
         return 23;
     }
+
+    public static class VERSION {
+        public static final String RELEASE = "unknown";
+        public static final int SDK_VERSION = getOplusOSVERSION();
+        public static final int SDK_SUB_VERSION = 1;
+    }
 }
