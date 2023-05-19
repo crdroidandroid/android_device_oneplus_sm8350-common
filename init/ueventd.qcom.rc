@@ -33,7 +33,7 @@ firmware_directories /vendor/firmware_mnt/image/
 # the DIAG device node is not world writable/readable.
 /dev/diag                 0660   system     oem_2901
 /dev/mhi_*_pipe_4         0660   system     system
-
+/dev/virt-eavb            0660   system     audio
 /dev/genlock              0666   system     system
 /dev/wlan                 0660   wifi       wifi
 /dev/kgsl                 0666   system     system
@@ -231,6 +231,7 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/msm_preproc_ctl      0660   system     audio
 /dev/msm_rtac             0660   system     audio
 /dev/msm_voicememo        0660   system     audio
+/dev/virt_sndcard_ctl     0660   system     audio
 /dev/ttyHSL1              0660   system     system
 /dev/ttyHS1               0660   system     system
 /dev/mdm                  0660   system     radio
@@ -411,6 +412,7 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/class/graphics/fb*     hdmi_audio_cb            0600    audioserver audio
 
 /sys/class/graphics/fb*     lineptr_value            0664    system  graphics
+/sys/class/drm/sde-crtc-*   lineptr_value            0664    system  graphics
 /sys/class/graphics/fb*     msm_fb_persist_mode      0664    system  graphics
 
 /sys/class/graphics/fb0     idle_time                0664    system  graphics
