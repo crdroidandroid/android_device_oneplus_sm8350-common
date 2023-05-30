@@ -11,6 +11,8 @@ ro.oplus.system.camera.flashlight=com.oplus.motor.flashlight
 ro.oplus.camera.video_beauty.prefix=oplus.video.beauty.
 ro.oplus.camera.video.beauty.switch=oplus.switch.video.beauty
 ro.oplus.camera.speechassist=true
+ro.oplus.camera.portrait.center.switch=oplus.switch.portrait.center
+ro.oplus.camera.portrait_center.prefix=oplus.portrait.center.
 
 # CNE
 persist.vendor.cne.feature=1

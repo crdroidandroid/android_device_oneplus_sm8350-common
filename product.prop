@@ -7,7 +7,16 @@ ro.af.client_heap_size_kbyte=7168
 
 # GMS
 ro.opa.device_model_id=ga-oplus-skill-os121-211011
+ro.com.google.clientidbase=android-oneplus
+ro.com.google.clientidbase.ms=android-oneplus-rvo3
+ro.com.google.clientidbase.vs=android-oneplus-rvo3
+ro.com.google.clientidbase.tx=android-oneplus-rvo3
 
 # Google Lens
 ro.com.google.lens.oem_camera_package=com.oplus.camera
 ro.com.google.lens.oem_image_package=com.oneplus.gallery
+
+# OnePlus
+persist.sys.oplus.region=US
+ro.vendor.oplus.regionmark=US
+ro.vendor.oplus.version=pu
