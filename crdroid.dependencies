@@ -5,7 +5,8 @@
   },
   {
     "repository": "crdroidandroid/android_hardware_oplus",
-    "target_path": "hardware/oplus"
+    "target_path": "hardware/oplus",
+    "branch": "13.0-op11"
   },
   {
     "repository": "crdroidandroid/proprietary_vendor_oneplus_camera",
