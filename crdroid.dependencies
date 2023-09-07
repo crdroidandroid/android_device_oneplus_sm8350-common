@@ -10,7 +10,8 @@
   {
     "repository": "crdroidandroid/proprietary_vendor_oneplus_camera",
     "target_path": "vendor/oneplus/camera",
-    "remote": "crdroid-gitlab"
+    "remote": "crdroid-gitlab",
+    "branch": "13.0-lemon"
   },
   {
     "repository": "crdroidandroid/proprietary_vendor_oneplus_sm8350-common",
