@@ -29,6 +29,8 @@ AB_OTA_PARTITIONS += \
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
+BUILD_BROKEN_CLANG_PROPERTY := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod
