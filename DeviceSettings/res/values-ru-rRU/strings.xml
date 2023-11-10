@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2016-2022 crDroid Android Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="device_title">Настройки OnePlus</string>
+    <string name="device_summary">Дополнительные настройки для OnePlus</string>
+
+    <!-- Notification slider -->
+    <string name="notification_slider_category_title">Переключатель уведомлений</string>
+    <string name="notification_slider_title">Параметры бокового переключателя уведомлений</string>
+    <string name="notification_slider_selection_dialog_title">Поведение</string>
+    <string name="notification_slider_top_position">Верхнее положение</string>
+    <string name="notification_slider_middle_position">Среднее положение</string>
+    <string name="notification_slider_bottom_position">Нижнее положение</string>
+    <string name="notification_slider_mode_total_silence">Полная тишина</string>
+    <string name="notification_slider_mode_alarms_only">Только будильники</string>
+    <string name="notification_slider_mode_priority_only">Только важные</string>
+    <string name="notification_slider_mode_none">Все</string>
+
+    <string name="notification_slider_usage_title">Использовать переключатель для</string>
+    <string name="notification_slider_for_notification">Уведомлений</string>
+    <string name="notification_slider_for_flashlight">Фонарика</string>
+    <string name="notification_slider_for_brightness">Яркости</string>
+    <string name="notification_slider_for_rotation">Поворота экрана</string>
+    <string name="notification_slider_for_ringer">Звонка</string>
+    <string name="notification_slider_for_notification_ringer">Уведомлений и звонка</string>
+
+    <string name="notification_slider_flashlight_off">Выключить</string>
+    <string name="notification_slider_flashlight_on">Включить</string>
+    <string name="notification_slider_flashlight_blink">Мигать</string>
+
+    <string name="notification_slider_brightness_auto">Авто</string>
+    <string name="notification_slider_brightness_brightest">Ярче</string>
+    <string name="notification_slider_brightness_darkest">Темнее</string>
+
+    <string name="notification_slider_rotation_auto">Автоматическая</string>
+    <string name="notification_slider_rotation_portrait">Вертикальная</string>
+    <string name="notification_slider_rotation_landscape_90">Горизонтальная (90°)</string>
+    <string name="notification_slider_rotation_landscape_270">Горизонтальная (270°)</string>
+
+    <string name="notification_slider_ringer_normal">Обычный</string>
+    <string name="notification_slider_ringer_vibrate">Вибрация</string>
+    <string name="notification_slider_ringer_silent">Без звука</string>
+
+    <!-- Vibration control -->
+    <string name="category_vibrator">Вибрация</string>
+    <string name="vib_strength_title_head">Общесистемная</string>
+    <string name="vib_strength_summary_head">Установка интенсивности общей вибрации</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Значение: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">по умолчанию</string>
+    <string name="custom_seekbar_default_value_to_set">Значение по умолчанию: <xliff:g id="v">%s</xliff:g>\nУдерживайте для установки</string>
+    <string name="custom_seekbar_default_value_is_set">Значение по умолчанию установлено</string>
+
+    <!-- USB 2.0 Force FastCharge -->
+    <string name="usb_title">USB</string>
+    <string name="usb2_fc_title">Быстрая зарядка USB 2.0</string>
+    <string name="usb2_fc_summary">Принудительная быстрая зарядка до 900mA в режиме USB 2.0</string>
+
+    <!-- Touchpanel -->
+    <string name="touchpanel_title">Сенсорная панель</string>
+    <string name="game_mode_title">Игровой режим</string>
+    <string name="game_mode_summary">Повышение реакции на касания и частоты опроса сенсорного экрана</string>
+    <string name="game_mode_warning">Может увеличить расход заряда батареи</string>
+    <string name="edge_touch_title">Снять ограничения касаний</string>
+    <string name="edge_touch_summary">Улучшение в играх нескольких касаний</string>
+    <string name="edge_touch_warning">Может увеличить вероятность случайного прикосновения</string>
+</resources>
