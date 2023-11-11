@@ -456,7 +456,11 @@ on property:vendor.radio.atfwd.start=false
 
 # Enable suspend to RAM
     write /sys/power/mem_sleep "deep"
-    
+
+#Set Cpu input boost
+    write /sys/devices/system/cpu/cpu_boost/input_boost_freq "0:1324800"
+    write /sys/devices/system/cpu/cpu_boost/input_boost_ms 150
+
 # corefile limit
 on property:persist.debug.trace=1
     mkdir /data/core 0777 root root
