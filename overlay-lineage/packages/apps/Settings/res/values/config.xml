@@ -9,8 +9,11 @@
     <integer name="config_network_scan_helper_max_search_time_sec">254</integer>
 
     <string name="pickup_sensor" translatable="false">android.sensor.tilt_detector</string>
+    <string name="pocket_sensor_type">android.sensor.proximity</string>
+
 
     <!-- Sensor trigger values -->
     <item name="pickup_sensor_value" format="float" type="dimen">0.0</item>
+    <item name="pocket_sensor_value" format="float" type="dimen">0.0</item>
 
 </resources>
