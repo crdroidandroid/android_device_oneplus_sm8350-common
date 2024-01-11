@@ -36,7 +36,6 @@ platform_dlkm.ko
 q6_dlkm.ko
 q6_notifier_dlkm.ko
 q6_pdr_dlkm.ko
-qcom_edac.ko
 qm1d1b0004.ko
 qm1d1c0042.ko
 qt1010.ko
@@ -70,8 +69,6 @@ tuner-types.ko
 tuner-xc2028.ko
 tx_macro_dlkm.ko
 va_macro_dlkm.ko
-wcd937x_dlkm.ko
-wcd937x_slave_dlkm.ko
 wcd938x_dlkm.ko
 wcd938x_slave_dlkm.ko
 wcd9xxx_dlkm.ko
