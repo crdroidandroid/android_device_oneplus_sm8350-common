@@ -9,7 +9,4 @@
           vibrator is capable of subtle vibrations -->
      <bool name="config_vibrateOnIconAnimation">true</bool>
 
-     <!-- Udfps fingerprint animation -->
-     <dimen name="udfps_animation_offset">-350dp</dimen>
-
 </resources>
