@@ -475,5 +475,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
+# Use Scudo instead of Jemalloc
+PRODUCT_USE_SCUDO := true
+
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/sm8350-common/sm8350-common-vendor.mk)
