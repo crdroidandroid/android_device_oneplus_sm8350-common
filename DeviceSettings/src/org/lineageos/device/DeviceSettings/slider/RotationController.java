@@ -66,9 +66,9 @@ public final class RotationController extends SliderControllerBase {
         try {
             IWindowManager wm = WindowManagerGlobal.getWindowManagerService();
             if (locked) {
-                wm.freezeRotation(rotation);
+                wm.freezeRotation(rotation, /* caller= */ "RotationController#setRotation");
             } else {
-                wm.thawRotation();
+                wm.thawRotation(/* caller= */ "RotationController#restoreRotationStateLocked");
             }
             return true;
         } catch (RemoteException exc) {
