@@ -1,11 +1,11 @@
 [
   {
-    "repository": "android_hardware_oplus",
+    "repository": "crdroidandroid/android_hardware_oplus",
     "target_path": "hardware/oplus" ,
     "branch": "14.0-lunaa"
   },
   {
-    "repository": "android_kernel_oneplus_sm8350",
+    "repository": "crdroidandroid/android_kernel_oneplus_sm8350",
     "target_path": "kernel/oneplus/sm8350" ,
     "branch": "14.0-lunaa"
   }
@@ -16,7 +16,7 @@
     "remote": "crdroid-gitlab"
   }
   {
-    "repository": "crdroidandroid/proprietary_vendor_oplus_camera",
+    "repository": "crdroidandroid/proprietary_vendor_oneplus_camera",
     "target_path": "vendor/oplus/camera",
     "branch": "14.0-lunaa" ,
     "remote": "crdroid-gitlab"
