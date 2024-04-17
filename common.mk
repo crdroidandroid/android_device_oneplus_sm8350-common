@@ -107,7 +107,7 @@ PRODUCT_PACKAGES += \
 TARGET_ENABLE_BLUR := true
 
 # Camera
-$(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
+#$(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
 
 PRODUCT_PACKAGES += \
     android.frameworks.stats@1.0.vendor \

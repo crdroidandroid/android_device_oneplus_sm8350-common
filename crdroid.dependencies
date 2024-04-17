@@ -14,11 +14,5 @@
     "target_path": "vendor/oneplus/sm8350-common",
     "branch": "14.0-lunaa",
     "remote": "crdroid-gitlab"
-  },
-  {
-    "repository": "crdroidandroid/proprietary_vendor_oneplus_camera",
-    "target_path": "vendor/oplus/camera",
-    "branch": "14.0-lunaa",
-    "remote": "crdroid-gitlab"
   }
 ]
