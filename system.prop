@@ -1,0 +1,2 @@
+# Silence minksocket logs
+persist.log.tag.minksocket=S
