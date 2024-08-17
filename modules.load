@@ -1,6 +1,5 @@
 adsp_loader_dlkm.ko
 apr_dlkm.ko
-aw8697.ko
 bolero_cdc_dlkm.ko
 bt_fm_slim.ko
 btpower.ko
