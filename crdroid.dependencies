@@ -5,11 +5,6 @@
     "branch": "14.0-lunaa"
   },
   {
-    "repository": "crdroidandroid/android_kernel_oneplus_sm8350",
-    "target_path": "kernel/oneplus/sm8350",
-    "branch": "14.0-lunaa"
-  },
-  {
     "repository": "crdroidandroid/proprietary_vendor_oneplus_sm8350-common",
     "target_path": "vendor/oneplus/sm8350-common",
     "branch": "14.0-lunaa",
