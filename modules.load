@@ -35,7 +35,6 @@ platform_dlkm.ko
 q6_dlkm.ko
 q6_notifier_dlkm.ko
 q6_pdr_dlkm.ko
-qcom_edac.ko
 qm1d1b0004.ko
 qm1d1c0042.ko
 qt1010.ko
