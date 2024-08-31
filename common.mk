@@ -172,7 +172,7 @@ PRODUCT_COPY_FILES += \
     hardware/qcom-caf/sm8350/display/config/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    persist.sys.brightness.low.gamma=true
+    persist.sys.brightness.low.gamma?=true
 
 # Dex to make OTA go faster
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
