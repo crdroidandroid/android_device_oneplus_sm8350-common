@@ -52,6 +52,8 @@
             <meta-data
                 android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.homepage" />
+            <meta-data android:name="com.android.settings.keyhint"
+                android:value="crdroid_device_parts_settings" />
             <meta-data android:name="com.android.settings.summary"
                 android:resource="@string/device_summary" />
         </activity>
