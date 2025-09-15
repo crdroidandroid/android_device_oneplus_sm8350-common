@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+     <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
+          vibrator is capable of subtle vibrations -->
+     <bool name="config_vibrateOnIconAnimation">true</bool>
+
+     <!-- The location of the devices physical tri state switch
+         0: Left side
+         1: Right side -->
+     <integer name="config_alertSliderLocation">1</integer>
+
+     <!-- Whether key handler sends intent when changing slider position -->
+     <string name="config_alertSliderIntent">org.lineageos.device.DeviceSettings.UPDATE_SLIDER_POSITION</string>
+
+</resources>

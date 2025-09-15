@@ -1,0 +1,15 @@
+[
+  {
+    "repository": "crdroidandroid/android_kernel_oneplus_sm8350",
+    "target_path": "kernel/oneplus/sm8350"
+  },
+  {
+    "repository": "crdroidandroid/android_hardware_oplus",
+    "target_path": "hardware/oplus"
+  },
+  {
+    "repository": "crdroidandroid/proprietary_vendor_oneplus_sm8350-common",
+    "target_path": "vendor/oneplus/sm8350-common",
+    "remote": "crdroid-gitlab"
+  }
+]
