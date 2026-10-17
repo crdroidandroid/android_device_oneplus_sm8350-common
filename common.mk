@@ -128,6 +128,9 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
     wvmkiller
 
+# Face unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Fastboot
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl.custom
